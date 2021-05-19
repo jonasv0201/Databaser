@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red58\green62\blue68;\red255\green255\blue255;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11320\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Beskrivelse:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 1. Registrere en trenings\'f8kt med tilh\'f8rende data, dvs. med \'f8velser man har gjort, samt hvordan selve treningen har g\'e5tt. \
+-En trenings\'f8kt best\'e5r av flere \'f8velser, som man har en plan for hvor stor belastning man skal ha. Dette vil si at hver \'f8velse er unik, med tanke p\'e5 for eksempel m\'e5lbelastning eller m\'e5l for antall sett for en \'f8velse. Det som faktisk blir gjennomf\'f8rt av belastning og antall sett blir lagret som et resultat, med en kommentar p\'e5 hver \'f8velse hvordan den ble gjennomf\'f8rt. Trenings\'f8kten blir evaluert i sin helhet p\'e5 dagsform. Resultatet til en trengings\'f8kt vil v\'e6re unikt, gitt de to foreign key-ene til \'f8velsesID og trenings\'f8ktID.\
+\
+2. Lage/se oversikt over kjente treninger/\'f8velser, sette opp nye m\'e5l, og vite hvilke m\'e5l man har hatt. \
+-Med kjente \'f8velser mener vi \'f8velser man har gjort/gjennomf\'f8rt p\'e5 et tidligere tidspunkt.  Man kan hente ut en oversikt over disse ved \'e5 hente ut hvilke \'f8velser som er registrert blant resultatene. Det samme kan man gj\'f8re med m\'e5l man har tatt. Man kan sette opp nye m\'e5l ved \'e5 enten se p\'e5 siste resultatet som ble registrert p\'e5 en \'f8velse eller det beste.\
+\
+3. Se progresjon for en bestemt trening/\'f8velse over en periode, samt hvilke m\'e5l man har hatt. \
+-
+\f0 \cf3 \cb1 \strokec3 For hver "Trenings\'f8kt" er det en relasjon til \'f8velsene som ble gjort og til "Resultat" ved gitt \'f8velse. For hver \'f8velse kan man hente informasjon om resultat for en gitt dato. Dette kan fremstilles grafisk for \'e5 vise progresjon.
+\f1 \cf2 \cb1 \strokec2 \
+\
+4. Se differensen mellom et bestemt resultat og det beste resultatet i l\'f8pet av siste uke, m\'e5ned eller tre m\'e5neder, samt forskjellen mellom det og m\'e5let som har v\'e6rt aktivt i den siste perioden. \
+-Ved \'e5 koble resultater og trenings\'f8kter sammen kan man velge seg et resultat og sammenligne med andre resultater som kan filtreres p\'e5 bl.a. tidsperioder ved \'e5 se p\'e5 dato.\
+\
+5. Kunne kopiere en bestemt trenings\'f8kt over til en ny mal. Hver mal skal kunne registreres med et navn og kunne brukes til \'e5 registrere en ny trenings\'f8kt. \
+-En \'93Mal\'94 har en relasjon til en \'93Trenings\'f8kt\'94 slik at hvis man vil hente ut en mal for \'e5 bruke det til en ny trenings\'f8kt, har man en direkte kobling mellom de spesifikke \'f8velsene, slik at man ikke trenger \'e5 legge til hver enkelt \'f8velse manuelt.\
+\
+6. Kunne hente ut puls- eller gps-data slik at det kan vises i et eksternt program, enten som en graf og/eller med kart.\
+-
+\f0 \cf3 \cb1 \strokec3 Puls- og gps-data lagres i "Resultat" for hver \'f8velse pr "Trenings\'f8kt". Dette kan fremvises i ekstern program.
+\f1 \cf2 \cb1 \strokec2 \
+\
+7. Lese treningsnotater samlet i en logg. \
+-
+\f0 \cf3 \cb4 \strokec3 Kommentar til hver gjennomf\'f8rte \'f8velse kan lagres i "Resultat" og dagsform samt notat for hele \'f8kten lagres i "Trenings\'f8kt\'94.
+\f1 \cf2 \cb1 \strokec2 \
+\
+8. Legge til, omorganisere og slette \'f8velser, grupper og delgrupper.\
+-Dette gj\'f8res i SQL og kommer derfor ikke frem av ER-skjemaet.}
